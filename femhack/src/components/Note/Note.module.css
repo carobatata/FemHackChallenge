@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #aa77c3;
+    border-radius: 6px;
+    height: 10rem;
+    width: 15rem;
+    background-color: #B9429E;
+
+    /* width: 16rem;
+    margin: 0.5rem; */
+}
+
+.buttonText {
+    font-weight: 600;
+    color:  #aa77c3;
+}
+
+.button {
+    align-self: flex-end;
+    margin: 2px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 600;
+    color:  #FFF;
+}
+
+.description {
+    font-size: 16px;
+    color:  #FFF;
+}
+
+.edit {
+    width: 15px;
+    height: 15px;
+    margin-left: 8px;
+}
+
+.subContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 2px;
+}

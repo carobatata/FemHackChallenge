@@ -1,0 +1,16 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #B9429E;
+}
+
+.googleLogo {
+    width: 10rem;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    color:  #FFF;
+    margin-left: 2rem;
+}

@@ -1,0 +1,65 @@
+.container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.label {
+    font-size: 20px;
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+    color:  #aa77c3
+}
+
+.input {
+    border-radius: 6px;
+    border: 2.5px solid #aa77c3;
+    margin-right: 1px;
+    background: #E6E6E6;
+    height: 1rem;
+}
+.button {
+    border-radius: 6px;
+    border: 2.5px solid #aa77c3;
+    background: #E6E6E6;
+    color:  #aa77c3;
+    font-weight: 600;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+/* .container {
+    border-radius: 6px;
+    background-color: #316B83;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.searchbar {
+    border-radius: 6px;
+    border: 2.5px solid #316B83;
+    margin-right: 1px;
+    background: #E6E6E6;
+    padding: 4px;
+    /* padding-bottom: 2px;
+    padding-top: 2px;
+    padding-left: 3px;
+    padding-right: 3px; */
+
+/* .button {
+    border-radius: 6px;
+    border: 2.5px solid #316B83;
+    background: #E6E6E6;
+    color: #316B83;
+    font-weight: 600;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+} */
+

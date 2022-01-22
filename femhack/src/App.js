@@ -1,11 +1,19 @@
-import AddNote from "./components/AddNote/AddNote";
-import Notes from "./components/Notes/Notes";
+import Home from "./components/Home/Home";
+import s from './App.module.css';
+import { Route, Switch } from "react-router";
+import EditNote from './components/EditNote/EditNote';
 
 function App() {
   return (
-    <div>
-      <AddNote/>
-      <Notes/>
+    <div className={s.app}>
+      <Switch>
+        <Route exact path='/'>
+          <Home/>
+        </Route>
+        <Route path='/:id'>
+          <EditNote/>
+        </Route>
+      </Switch>
     </div>
   );
 }

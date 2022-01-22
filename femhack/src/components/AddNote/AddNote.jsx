@@ -1,6 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { addNote } from '../../actions/index';
-import { useSelector, useDispatch } from 'react-redux';
+import {  useDispatch } from 'react-redux';
+import s from './AddNote.module.css';
+
 
 export default function AddNote() {
 
@@ -22,29 +24,33 @@ export default function AddNote() {
       e.preventDefault();
       console.log(input)
       dispatch(addNote(input));
-      alert('Note succesfully created')
+      setInput({
+          title: '',
+          description: '',
+      })
     }
   
   
     return (
-      <div>
-        <form onSubmit={handleSubmit}>
-  
-          <label>Title</label>
-          <input 
-            name="title"
-            type="text"
-            value= {input.title}
-            onChange={handleChange}/>
-  
-          <label>Description</label>
-          <textarea 
-              name="description" 
-              value = {input.description} 
-              onChange={handleChange}></textarea>
-  
-          <button type= "submit">Add Note</button>
-  
+      <div className={s.container}>
+        <form className={s.container} onSubmit={handleSubmit}> 
+            <label className={s.label}>Title:</label>
+            <input
+                className={s.input} 
+                name="title"
+                type="text"
+                value= {input.title}
+                onChange={handleChange}/>
+
+            <label className={s.label}>Description:</label>
+            <textarea 
+                className={s.input}
+                name="description" 
+                value = {input.description} 
+            //   placeholder='enter a valid description'
+                onChange={handleChange}></textarea>
+
+            <button className={s.button} type= "submit">Add Note</button>
         </form>
       </div>
     )
