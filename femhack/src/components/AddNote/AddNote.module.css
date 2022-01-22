@@ -2,31 +2,35 @@
     margin-top: 1rem;
     display: flex;
     justify-content: center;
+    /* background-color: #316B83; */
     border-radius: 6px;
+
 }
 
 .label {
-    font-size: 20px;
+    /* font-size: 16px; */
     margin-right: 0.5rem;
     margin-left: 1rem;
-    color:  #aa77c3
+    color:  #F4EEA9;
 }
 
 .input {
     border-radius: 6px;
-    border: 2.5px solid #aa77c3;
+    border: 2.5px solid #F4EEA9;
     margin-right: 1px;
     background: #E6E6E6;
     height: 1rem;
 }
 .button {
     border-radius: 6px;
-    border: 2.5px solid #aa77c3;
-    background: #E6E6E6;
-    color:  #aa77c3;
+    border: 2.5px solid #F4EEA9;
+    background: #064635;
+    color:  #F4EEA9;
     font-weight: 600;
     padding-top: 3px;
     padding-bottom: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
     cursor: pointer;
     margin-left: 1rem;
 }

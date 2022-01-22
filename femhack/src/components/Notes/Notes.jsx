@@ -16,7 +16,8 @@ export default function Notes() {
                   <Note 
                   id={note.id}
                   title={note.title}
-                  description={note.description}/>
+                  description={note.description}
+                  />
               </div>
               //   </Link>
             ))}

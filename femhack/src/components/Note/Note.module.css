@@ -1,11 +1,11 @@
 .container {
     display: flex;
     flex-direction: column;
-    border: 3px solid #aa77c3;
+    border: 3px solid #519259;
     border-radius: 6px;
-    height: 10rem;
+    height: 15rem;
     width: 15rem;
-    background-color: #B9429E;
+    background-color: #519259;
 
     /* width: 16rem;
     margin: 0.5rem; */
@@ -13,33 +13,62 @@
 
 .buttonText {
     font-weight: 600;
-    color:  #aa77c3;
+    color:  #064635;
+    margin-left: 3px;
+    border: 1.5px solid #064635;
+    /* background-color: #064635; */
+  
 }
 
 .button {
     align-self: flex-end;
-    margin: 2px;
+    margin: 3px;
 }
 
 .title {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
-    color:  #FFF;
+    color:  #F4EEA9;
 }
 
 .description {
-    font-size: 16px;
-    color:  #FFF;
+    font-size: 14px;
+    color:  #064635;
 }
 
 .edit {
-    width: 15px;
-    height: 15px;
-    margin-left: 8px;
+    width: 10px;
+    height: 10px; 
 }
 
 .subContainer {
     display: flex;
     align-items: center;
     margin-left: 2px;
+}
+
+.input {
+    font-size: 10px;
+    border-radius: 4px;
+    margin: 8px;
+}
+
+.label {
+    font-size: 12px;
+    color:  #F4EEA9;
+    margin: 8px;
+}
+
+.buttons {
+    margin-top: 12px;
+    border-radius: 6px;
+    border: 2px solid #F4EEA9;
+    background: #064635;
+    color:  #F4EEA9;
+    font-weight: 600;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    cursor: pointer;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
 }

@@ -56,4 +56,3 @@ export default function AddNote() {
     )
   };
   
-//   export default connect(null, {addTodo})(AddTodo)

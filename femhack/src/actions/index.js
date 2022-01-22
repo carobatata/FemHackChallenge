@@ -20,3 +20,11 @@ export function editNote(payload) {
         payload,
     }
 }
+
+// export function addTag(payload) {
+//     return {
+//         type: "AddTag", 
+//         payload,
+//     }
+// }
+

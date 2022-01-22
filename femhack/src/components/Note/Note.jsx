@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import s from './Note.module.css';
 import edit from '../../edit.png'
 import { useState } from "react";
+import AddTag from "../AddTag/AddTag";
 
 export default function Note({title, description, id}) {
 
@@ -15,10 +16,11 @@ export default function Note({title, description, id}) {
     const [input,setInput] = useState({
         id,
         title,
-        description
+        description,
       });
 
       const [pressed, setPressed] = useState(false);
+      const [pressing, setPressing] = useState(false);
     
       const handleChange = function(e) {
         setInput({
@@ -38,11 +40,16 @@ export default function Note({title, description, id}) {
         setPressed(true);
       }
 
+      const handleAddTag = function() {
+        setPressing(true)
+      }
+
     if(!pressed){
         return (
         <div className={s.container}>
             <div className={s.button}>
-                <button onClick={handleClick}><img className={s.edit} src={edit} alt="editPencil"/></button>
+                <button className={s.buttonText} onClick={handleAddTag}>Add Tags</button>
+                <button className={s.buttonText} onClick={handleClick}><img className={s.edit} src={edit} alt="editPencil"/></button>
                 <button className={s.buttonText} onClick={handleRemoveNote}>x</button>
             </div>
             <div className={s.subContainer}>
@@ -51,13 +58,14 @@ export default function Note({title, description, id}) {
             <div className={s.subContainer}>
                 <p className={s.description}>{input.description}</p>
             </div>
+            {pressing ? (<AddTag/>) : (null)}
         </div>
         )
     } else {
         return (
             <div className={s.container}>
               <form className={s.container} onSubmit={handleSubmit}> 
-                  <label className={s.label}>Title:</label>
+                  <label className={s.label}>New title:</label>
                   <input
                       className={s.input} 
                       name="title"
@@ -65,7 +73,7 @@ export default function Note({title, description, id}) {
                       value= {input.title}
                       onChange={handleChange}/>
       
-                  <label className={s.label}>Description:</label>
+                  <label className={s.label}>New description:</label>
                   <textarea 
                       className={s.input}
                       name="description" 
@@ -73,7 +81,7 @@ export default function Note({title, description, id}) {
                   //   placeholder='enter a valid description'
                       onChange={handleChange}></textarea>
       
-                  <button className={s.button} type= "submit">Submit</button>
+                  <button className={s.buttons} type= "submit">Submit</button>
               </form>
             </div>
           )

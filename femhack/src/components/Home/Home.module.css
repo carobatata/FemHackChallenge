@@ -1,7 +1,7 @@
 .nav{
     display: flex;
     justify-content: space-between;
-    background-color: #B9429E;
+    background-color: #519259;
 }
 
 .googleLogo {
@@ -11,6 +11,6 @@
 .title {
     font-size: 20px;
     font-weight: 600;
-    color:  #FFF;
+    color:  #F4EEA9;
     margin-left: 2rem;
 }

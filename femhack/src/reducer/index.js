@@ -1,4 +1,4 @@
-import { addNote, removeNote, editNote} from "../actions";
+import { addNote, removeNote, editNote, addTag} from "../actions";
 
 const initialState = [];
 
@@ -12,8 +12,11 @@ export default function reducer(state = initialState, action) {
             var noteToEdit = state.find(n => n.id === action.payload.id)
             noteToEdit.title = action.payload.title;
             noteToEdit.description = action.payload.description;
-            console.log(state); 
             return state;
+        // case "AddTag":
+        //     var note = state.find(n => n.id === action.payload.noteId)
+        //     note.tags = [...note.tags, action.payload.tag];
+        //     return state;
         default:
             return state;
     }  
